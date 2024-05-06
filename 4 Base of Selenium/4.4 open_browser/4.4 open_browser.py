@@ -8,3 +8,5 @@ driver = webdriver.Chrome(options=options, service=g)
 base_url = 'https://www.saucedemo.com/'
 driver.get(base_url)
 driver.maximize_window()
+
+#code is not working
