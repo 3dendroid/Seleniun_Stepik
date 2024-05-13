@@ -16,12 +16,7 @@ driver.maximize_window()
 driver.get('https://www.saucedemo.com/')
 
 # Elements
-# username = driver.find_element(By.ID, 'user-name') # by ID attribute
-# username.send_keys('standard_user') 
-# time.sleep(3)
-
-username = driver.find_element(By.XPATH, '//*[@id="user-name"]') # by full xpath attribute
-# username = driver.find_element(By.XPATH, '//input[@id="user-name"]') # id xpath attribute
+username = driver.find_element(By.ID, 'user-name') # by ID attribute
 username.send_keys('standard_user') 
 time.sleep(3)
 
