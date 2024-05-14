@@ -21,16 +21,15 @@ username = driver.find_element(By.ID, 'user-name')  # by ID attribute
 username.send_keys('standard_user')
 time.sleep(3)
 
-password = driver.find_element(By.ID, 'password')  # by ID attribute
+password = driver.find_element(By.XPATH, '//*[@id="password"]')  # by XPATH attribute
 password.send_keys('secret_sauce')
 time.sleep(3)
 
-# button_login = driver.find_element(By.ID, 'login-button') # by ID attribute
-# button_login.click()
-# time.sleep(3)
 button_login = driver.find_element(By.CSS_SELECTOR, '#login-button')  # by CSS attribute
 button_login.click()
 time.sleep(3)
 
 # Quit
 driver.quit()
+
+#continue
