@@ -1,4 +1,5 @@
 import time
+import datetime
 
 from selenium import webdriver
 from selenium.webdriver import Keys
@@ -51,6 +52,11 @@ time.sleep(3)
 # button_login.click()
 # print("Click Login Button")
 
+# SCREENSHOT
+now_date = datetime.datetime.utcnow().strftime("%Y_%m_%d_%H_%M_%S")
+name_screenshot = 'screenshot_' + now_date + '.png'
+driver.save_screenshot('C:\\Users\\GIGACHAD\\PycharmProjects\\Seleniun_Stepik\\4 Base of Selenium\\4.4 open_browser\\screenshots\\' + name_screenshot)
+driver.get_sc
 
 # QUIT
 driver.quit()
