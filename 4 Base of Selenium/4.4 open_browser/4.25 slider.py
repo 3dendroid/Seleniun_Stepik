@@ -2,7 +2,6 @@ import time
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 
 # OPTIONS
 options = webdriver.ChromeOptions()
@@ -15,11 +14,12 @@ s = Service()
 # DRIVER
 driver = webdriver.Chrome(options=options, service=s)
 driver.maximize_window()
-driver.get('https://testpages.herokuapp.com/styled/basic-html-form-test.html')
+driver.get('https://demoqa.com/date-picker')
 time.sleep(2)
 
-# DOUBLE CLICK
+# SLIDER
 # continue
+
 
 # QUIT
 driver.quit()

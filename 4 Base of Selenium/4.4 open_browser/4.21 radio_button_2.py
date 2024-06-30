@@ -31,6 +31,5 @@ radio_button_3 = driver.find_element(By.XPATH, "//input[@value='rd3']")
 radio_button_3.click()
 time.sleep(2)
 
-
 # QUIT
 driver.quit()
