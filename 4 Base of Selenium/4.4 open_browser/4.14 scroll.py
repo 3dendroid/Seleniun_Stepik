@@ -51,7 +51,7 @@ time.sleep(3)
 # SCREENSHOT
 now_date = datetime.datetime.utcnow().strftime("%Y_%m_%d_%H_%M_%S")
 name_screenshot = 'screenshot_' + now_date + '.png'
-driver.save_screenshot('C:\\Users\\GIGACHAD\\PycharmProjects\\Seleniun_Stepik\\4 Base of Selenium\\4.4 open_browser\\screenshots\\' + name_screenshot)
+driver.save_screenshot('C:\\Users\\GIGACHAD\\PycharmProjects\\Selenium_Stepik\\4 Base of Selenium\\4.4 open_browser\\screenshots\\' + name_screenshot)
 
 
 # QUIT
