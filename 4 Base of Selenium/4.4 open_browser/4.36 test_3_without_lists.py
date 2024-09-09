@@ -12,7 +12,7 @@ password_all = 'secret_sauce'
 
 print("Приветствую тебя в нашем интернет магазине!")
 print(
-    "Выбери один из следующих товаров и укажи его номер: \n1 - Sauce Labs Backpack \n2 - Sauce Labs Bike Light \n3 - Sauce Labs Onesie \n4 - Test.allTheThings() T-Shirt \n5 - Fleece Jacket \n6 - Brown T-Shirt")
+    "Выбери один из следующих товаров и укажи его номер: \n1 - Sauce Labs Backpack \n2 - Sauce Labs Bike Light \n3 - Sauce Labs Onesie \n4 - Test.allTheThings() T-Shirt \n5 OOP + Selenium - Fleece Jacket \n6 - Brown T-Shirt")
 product = input()
 
 # CHECK IF PRODUCT NUMBER IS DIGIT AND VALID
