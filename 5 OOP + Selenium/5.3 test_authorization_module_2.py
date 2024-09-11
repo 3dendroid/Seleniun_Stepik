@@ -9,13 +9,13 @@ from selenium.webdriver.support.wait import WebDriverWait
 from login_page import Login_page
 
 
-class Test_1:
+class Test_2:
     def test_select_product(self):
         print('TEST IS STARTED!')
 
         # DATAS
         url = 'https://www.saucedemo.com/'
-        login_standard_user = 'standard_user'
+        login_problem_user = 'problem_user'
         password_all = 'secret_sauce'
 
         # OPTIONS
@@ -33,7 +33,7 @@ class Test_1:
 
         # LOGIN, PASSWORD AND CLICK LOGIN BUTTON
         login = Login_page(driver)
-        login.authorization(login_standard_user, password_all)
+        login.authorization(login_problem_user, password_all)
 
         # FIND AND SELECT PRODUCT
         select_product = WebDriverWait(driver, 10).until(
@@ -57,5 +57,5 @@ class Test_1:
         driver.quit()
 
 
-test = Test_1()
+test = Test_2()
 test.test_select_product()
