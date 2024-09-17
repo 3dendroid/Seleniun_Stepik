@@ -1,7 +1,8 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-import time
 
 # Options
 options = webdriver.ChromeOptions()
@@ -20,16 +21,16 @@ driver.get('https://www.saucedemo.com/')
 # username.send_keys('standard_user') 
 # time.sleep(3)
 
-username = driver.find_element(By.XPATH, '//*[@id="user-name"]') # by full xpath attribute
+username = driver.find_element(By.XPATH, '//*[@id="user-name"]')  # by full xpath attribute
 # username = driver.find_element(By.XPATH, '//input[@id="user-name"]') # id xpath attribute
-username.send_keys('standard_user') 
+username.send_keys('standard_user')
 time.sleep(3)
 
-password = driver.find_element(By.ID, 'password') # by ID attribute
+password = driver.find_element(By.ID, 'password')  # by ID attribute
 password.send_keys('secret_sauce')
 time.sleep(3)
 
-button = driver.find_element(By.ID, 'login-button') # by ID attribute
+button = driver.find_element(By.ID, 'login-button')  # by ID attribute
 button.click()
 time.sleep(3)
 
