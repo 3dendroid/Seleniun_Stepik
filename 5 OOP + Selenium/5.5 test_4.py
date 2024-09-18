@@ -5,23 +5,23 @@ from selenium.webdriver.chrome.service import Service
 
 from login_page_for_test import Login_page
 
+# DATAS
+url = 'https://www.saucedemo.com/'
+
+all_users = {
+    'standard_user',
+    'locked_out_user',
+    'performance_glitch_user',
+    'error_user',
+    'visual_user'
+}
+
+password = 'secret_sauce'
+
 
 class Test_4:
     def test_login_users(self):
         print('TEST IS STARTED!')
-
-        # DATAS
-        url = 'https://www.saucedemo.com/'
-
-        all_users = {
-            'standard_user',
-            'locked_out_user',
-            'performance_glitch_user',
-            'error_user',
-            'visual_user'
-        }
-
-        password = 'secret_sauce'
 
         # OPTIONS
         options = webdriver.ChromeOptions()

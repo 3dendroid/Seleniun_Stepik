@@ -1,20 +1,10 @@
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
 class Login_page():
-    # DATAS
-    users = {
-        'standard_user',
-        'locked_out_user',
-        'performance_glitch_user',
-        'error_user',
-        'visual_user'
-    }
-
-    passwords = {'secret_sauce'}
-
     def __init__(self, driver):
         self.driver = driver
 
@@ -34,26 +24,23 @@ class Login_page():
         login_button.click()
         print("Input Login Button")
 
-        # ASSERT LOGIN BUTTON
+        # ASSERT LOGIN
+        try:
+            changed_url = WebDriverWait(self.driver, 10).until(EC.url_to_be('https://www.saucedemo.com/inventory.html'))
+            if not changed_url:
+                print(f"User: {users}, Login Failed!\n")
 
-        text = "Epic sadface: Sorry, this user has been locked out"
-        locked_text = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, '//div[@class="error-message-container error"]')))
-        value_locked_text = locked_text.text
-        print(value_locked_text)
+            else:
+                print(f"User: {users}, Login Success!")
 
-        # if text != value_locked_text:
-        #     print(f"User {users} Login Success!")
-        # else:
-        #     print(f"{users} Login Failed!")
+                # LOGOUT BUTTON
+                login_burger = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.XPATH, "//button[@id='react-burger-menu-btn']")))
+                login_burger.click()
+                logout_button = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.XPATH, "//a[@id='logout_sidebar_link']")))
+                logout_button.click()
+                print("Input Logout Button.\n")
 
-        # LOGOUT BUTTON
-        login_burger = WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//button[@id='react-burger-menu-btn']")))
-        login_burger.click()
-        logout_button = WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//a[@id='logout_sidebar_link']")))
-        logout_button.click()
-        print("Input Logout Button")
-
-        # continue
+        except TimeoutException:
+            print(f"User: {users}, Login Failed! Timeout reached.\n")
