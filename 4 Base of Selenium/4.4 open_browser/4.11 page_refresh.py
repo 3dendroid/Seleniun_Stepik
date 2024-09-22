@@ -42,7 +42,7 @@ value_warring_text = warring_text.text
 time.sleep(3)
 # assert value_warring_text == 'Epic sadface: Username and password do not match any user in this service'
 print("GOOD TEST")
-driver.refresh() # refresh the page
+driver.refresh() # refresh the pages
 time.sleep(3)
 
 # text
