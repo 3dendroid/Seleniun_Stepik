@@ -18,9 +18,9 @@ class Login_page(Base):
     user_name = 'user-name'
     password = 'password'
     login_button = 'login-button'
+    main_word = '//span[@class="title"]'
 
     # GETTERS
-
     def get_user_name(self):
         return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.user_name)))
 
@@ -30,26 +30,30 @@ class Login_page(Base):
     def get_login_button(self):
         return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.login_button)))
 
-    # ACTIONS
+    def get_main_word(self):
+        return WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, self.main_word)))
 
+    # ACTIONS
     def input_user_name(self, user_name):
         self.get_user_name().send_keys(user_name)
-        print("Input Login")
+        print("INPUT LOGIN")
         time.sleep(2)
 
     def input_password(self, password):
         self.get_password().send_keys(password)
-        print("Input Password")
+        print("INPUT PASSWORD")
         time.sleep(2)
 
     def click_login_button(self):
         self.get_login_button().click()
-        print("Click Login Button")
+        print("CLICK LOGIN BUTTON")
         time.sleep(2)
 
     def authorization(self):
         self.driver.get(self.url)
         self.driver.maximize_window()
+        self.get_current_url()  # get current url (7.4)
         self.input_user_name('standard_user')
         self.input_password('secret_sauce')
         self.click_login_button()
+        self.assert_word(self.get_main_word(), 'Products')  # assert word (7.5)

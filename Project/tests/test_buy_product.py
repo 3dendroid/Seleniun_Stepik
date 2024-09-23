@@ -5,6 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 from Project.pages.login_page import Login_page
+from Project.pages.main_page import Main_page
+
 
 
 class Test_5:
@@ -15,6 +17,7 @@ class Test_5:
         # OPTIONS
         options = webdriver.ChromeOptions()
         options.add_experimental_option('detach', True)
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])  # clear console (7.3)
 
         # SERVICE
         s = Service()
@@ -27,6 +30,10 @@ class Test_5:
 
         login = Login_page(driver)
         login.authorization()
+        mp = Main_page(driver)
+        mp.get_product()
+        mp.get_shopping_cart()
+        mp.get_current_url()
 
         # ENTER SHOPPING CART
 
@@ -38,7 +45,7 @@ class Test_5:
         enter_shopping_cart = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, "//div[@id='shopping_cart_container']")))
         enter_shopping_cart.click()
-        print('CLICT ENTER SHOPPING CART')
+        print('CLICK ENTER SHOPPING CART')
 
         # DRIVER QUIT
         print('TEST IS OVER!')
