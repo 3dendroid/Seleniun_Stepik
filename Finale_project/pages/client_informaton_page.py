@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from Project.base.base_class import Base
+from Finale_project.base.base_class import Base
 
 
 class Client_information_page(Base):

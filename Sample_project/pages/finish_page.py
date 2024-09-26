@@ -1,4 +1,4 @@
-from Project.base.base_class import Base
+from Sample_project.base.base_class import Base
 
 
 class Finish_page(Base):

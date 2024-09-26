@@ -4,25 +4,26 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from Project.base.base_class import Base
+from Finale_project.base.base_class import Base
 
 
 class Login_page(Base):
-    url = 'https://www.saucedemo.com/'
+    url = 'https://waxashop.ru/'
 
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
 
     # LOCATORS
-    user_name = 'user-name'
-    password = 'password'
+    enter = '//span[@data-modal="login"]//span[@class="icon"]'
+    login_email = '//input[@id="login"]'
+    password = '//input[@id="password"]'
     login_button = 'login-button'
     main_word = '//span[@class="title"]'
 
     # GETTERS
     def get_user_name(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.user_name)))
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.enter)))
 
     def get_password(self):
         return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.password)))

@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-from Project.pages.login_page import Login_page
-from Project.pages.main_page import Main_page
+from Finale_project.pages.login_page import Login_page
+from Finale_project.pages.main_page import Main_page
 
 
 def test_link_about():
