@@ -8,8 +8,7 @@ from Finale_project.base.base_class import Base
 
 
 class Registration_page(Base):
-    # continue
-    # URL
+    url = 'https://waxashop.ru/signup/'
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -24,19 +23,19 @@ class Registration_page(Base):
 
     # GETTERS
     def get_first_name(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.first_name)))
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.first_name)))
 
     def get_email(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.email)))
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.email)))
 
     def get_password(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.password)))
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.password)))
 
     def get_phone(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.phone)))
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.phone)))
 
     def get_register_button(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.ID, self.register_button)))
+        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.register_button)))
 
     # ACTIONS
     def input_first_name(self, first_name):
@@ -64,8 +63,12 @@ class Registration_page(Base):
         print("CLICK REGISTER BUTTON")
 
     def registration(self):
+        self.driver.get(self.url)
+        self.driver.maximize_window()
+        self.get_current_url()  # get current url (7.4)
         self.input_first_name('tester777')
         self.input_email('testemail@example777.com')
         self.input_password('password777')
-        self.input_phone('123456789')
+        self.input_phone('1234567890')
         self.click_register_button()
+        self.get_screenshot()

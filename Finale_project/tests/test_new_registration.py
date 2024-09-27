@@ -1,13 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-from Finale_project.pages.login_page import Login_page
-from Finale_project.pages.main_page import Main_page
+from Finale_project.pages.registration_page import Registration_page
 
 
-def test_register():
-    print('TEST IS STARTED!')
-
+def test_register(set_up, set_group):
     # OPTIONS
     options = webdriver.ChromeOptions()
     options.add_experimental_option('detach', True)
@@ -19,11 +16,9 @@ def test_register():
     # DRIVER
     driver = webdriver.Chrome(options=options, service=s)
 
-    # LOGIN, PASSWORD AND CLICK LOGIN BUTTON
-    print('TEST IS STARTED!')
-
-    reg = Reste
+    # REGISTRATION, SELECT PRODUCT, MAKE A PURCHASE
+    reg = Registration_page(driver)
+    reg.registration()
 
     # DRIVER QUIT
-    print('TEST IS OVER!')
     driver.quit()
