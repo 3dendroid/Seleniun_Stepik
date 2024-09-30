@@ -1,0 +1,58 @@
+Selenium Manager binary found at: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+Executing process: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+Found chromedriver 129.0.6668.70 in PATH: C:\Program Files\Chromedriver\chromedriver.exe
+chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+Output: "\r\r\n\r\r\nVersion=129.0.6668.71\r\r\n\r\r\n\r\r\n\r"
+Detected browser: chrome 129.0.6668.71
+Required driver: chromedriver 129.0.6668.70
+Driver path: C:\Program Files\Chromedriver\chromedriver.exe
+Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+Started executable: `C:\Program Files\Chromedriver\chromedriver.exe` in a child process with pid: 6220 using 0 to output -3
+POST http://localhost:51285/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'detach': True, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)","stacktrace":"\tGetHandleVerifier [0x00007FF667D4B125+29573]\n\t(No symbol) [0x00007FF667CBFF50]\n\t(No symbol) [0x00007FF667B7B6EA]\n\t(No symbol) [0x00007FF667BB6B91]\n\t(No symbol) [0x00007FF667BB268E]\n\t(No symbol) [0x00007FF667C030F0]\n\t(No symbol) [0x00007FF667C02780]\n\t(No symbol) [0x00007FF667BF70A3]\n\t(No symbol) [0x00007FF667BC12DF]\n\t(No symbol) [0x00007FF667BC2441]\n\tGetHandleVerifier [0x00007FF66807C76D+3377613]\n\tGetHandleVerifier [0x00007FF6680C7B67+3685831]\n\tGetHandleVerifier [0x00007FF6680BCF8B+3641835]\n\tGetHandleVerifier [0x00007FF667E0B2A6+816390]\n\t(No symbol) [0x00007FF667CCB25F]\n\t(No symbol) [0x00007FF667CC7084]\n\t(No symbol) [0x00007FF667CC7220]\n\t(No symbol) [0x00007FF667CB607F]\n\tBaseThreadInitThunk [0x00007FFEB4C57374+20]\n\tRtlUserThreadStart [0x00007FFEB6C5CC91+33]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+Selenium Manager binary found at: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+Executing process: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+Found chromedriver 129.0.6668.70 in PATH: C:\Program Files\Chromedriver\chromedriver.exe
+chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+Output: "\r\r\n\r\r\nVersion=129.0.6668.71\r\r\n\r\r\n\r\r\n\r"
+Detected browser: chrome 129.0.6668.71
+Required driver: chromedriver 129.0.6668.70
+Driver path: C:\Program Files\Chromedriver\chromedriver.exe
+Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+Started executable: `C:\Program Files\Chromedriver\chromedriver.exe` in a child process with pid: 2768 using 0 to output -3
+POST http://localhost:51498/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'detach': True, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)","stacktrace":"\tGetHandleVerifier [0x00007FF667D4B125+29573]\n\t(No symbol) [0x00007FF667CBFF50]\n\t(No symbol) [0x00007FF667B7B6EA]\n\t(No symbol) [0x00007FF667BB6B91]\n\t(No symbol) [0x00007FF667BB268E]\n\t(No symbol) [0x00007FF667C030F0]\n\t(No symbol) [0x00007FF667C02780]\n\t(No symbol) [0x00007FF667BF70A3]\n\t(No symbol) [0x00007FF667BC12DF]\n\t(No symbol) [0x00007FF667BC2441]\n\tGetHandleVerifier [0x00007FF66807C76D+3377613]\n\tGetHandleVerifier [0x00007FF6680C7B67+3685831]\n\tGetHandleVerifier [0x00007FF6680BCF8B+3641835]\n\tGetHandleVerifier [0x00007FF667E0B2A6+816390]\n\t(No symbol) [0x00007FF667CCB25F]\n\t(No symbol) [0x00007FF667CC7084]\n\t(No symbol) [0x00007FF667CC7220]\n\t(No symbol) [0x00007FF667CB607F]\n\tBaseThreadInitThunk [0x00007FFEB4C57374+20]\n\tRtlUserThreadStart [0x00007FFEB6C5CC91+33]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+Selenium Manager binary found at: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+Executing process: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "windows", arch: "amd64", lang: "python", selenium_version: "4.25" }
+Found chromedriver 129.0.6668.70 in PATH: C:\Program Files\Chromedriver\chromedriver.exe
+chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+Output: "\r\r\n\r\r\nVersion=129.0.6668.71\r\r\n\r\r\n\r\r\n\r"
+Detected browser: chrome 129.0.6668.71
+Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+Required driver: chromedriver 129.0.6668.70
+Driver path: C:\Program Files\Chromedriver\chromedriver.exe
+Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+Started executable: `C:\Program Files\Chromedriver\chromedriver.exe` in a child process with pid: 17172 using 0 to output -3
+POST http://localhost:63305/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'detach': True, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)","stacktrace":"\tGetHandleVerifier [0x00007FF731ADB125+29573]\n\t(No symbol) [0x00007FF731A4FF50]\n\t(No symbol) [0x00007FF73190B6EA]\n\t(No symbol) [0x00007FF731946B91]\n\t(No symbol) [0x00007FF73194268E]\n\t(No symbol) [0x00007FF7319930F0]\n\t(No symbol) [0x00007FF731992780]\n\t(No symbol) [0x00007FF7319870A3]\n\t(No symbol) [0x00007FF7319512DF]\n\t(No symbol) [0x00007FF731952441]\n\tGetHandleVerifier [0x00007FF731E0C76D+3377613]\n\tGetHandleVerifier [0x00007FF731E57B67+3685831]\n\tGetHandleVerifier [0x00007FF731E4CF8B+3641835]\n\tGetHandleVerifier [0x00007FF731B9B2A6+816390]\n\t(No symbol) [0x00007FF731A5B25F]\n\t(No symbol) [0x00007FF731A57084]\n\t(No symbol) [0x00007FF731A57220]\n\t(No symbol) [0x00007FF731A4607F]\n\tBaseThreadInitThunk [0x00007FF939A57374+20]\n\tRtlUserThreadStart [0x00007FF93B0BCC91+33]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+Selenium Manager binary found at: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+Executing process: C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+Found chromedriver 129.0.6668.70 in PATH: C:\Program Files\Chromedriver\chromedriver.exe
+chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+Output: "\r\r\n\r\r\nVersion=129.0.6668.71\r\r\n\r\r\n\r\r\n\r"
+Detected browser: chrome 129.0.6668.71
+Required driver: chromedriver 129.0.6668.70
+Driver path: C:\Program Files\Chromedriver\chromedriver.exe
+Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+Started executable: `C:\Program Files\Chromedriver\chromedriver.exe` in a child process with pid: 16420 using 0 to output -3
+POST http://localhost:63560/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'detach': True, 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-infobars']}}}}
+Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)","stacktrace":"\tGetHandleVerifier [0x00007FF731ADB125+29573]\n\t(No symbol) [0x00007FF731A4FF50]\n\t(No symbol) [0x00007FF73190B6EA]\n\t(No symbol) [0x00007FF731946B91]\n\t(No symbol) [0x00007FF73194268E]\n\t(No symbol) [0x00007FF7319930F0]\n\t(No symbol) [0x00007FF731992780]\n\t(No symbol) [0x00007FF7319870A3]\n\t(No symbol) [0x00007FF7319512DF]\n\t(No symbol) [0x00007FF731952441]\n\tGetHandleVerifier [0x00007FF731E0C76D+3377613]\n\tGetHandleVerifier [0x00007FF731E57B67+3685831]\n\tGetHandleVerifier [0x00007FF731E4CF8B+3641835]\n\tGetHandleVerifier [0x00007FF731B9B2A6+816390]\n\t(No symbol) [0x00007FF731A5B25F]\n\t(No symbol) [0x00007FF731A57084]\n\t(No symbol) [0x00007FF731A57220]\n\t(No symbol) [0x00007FF731A4607F]\n\tBaseThreadInitThunk [0x00007FF939A57374+20]\n\tRtlUserThreadStart [0x00007FF93B0BCC91+33]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request

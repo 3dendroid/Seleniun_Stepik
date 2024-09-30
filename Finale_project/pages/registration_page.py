@@ -71,4 +71,5 @@ class Registration_page(Base):
         self.input_password('password777')
         self.input_phone('1234567890')
         self.click_register_button()
+        time.sleep(3)
         self.get_screenshot()

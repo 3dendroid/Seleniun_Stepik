@@ -24,7 +24,7 @@ class Base:
 
     def get_screenshot(self):
         now_date = datetime.datetime.utcnow().strftime("%Y_%m_%d_%H_%M_%S")
-        path = 'C:\\Users\\GIGACHAD\\PycharmProjects\\Selenium_Stepik\\Project\\screenshots\\'
+        path ='C:\\Users\\GIGACHAD\\Documents\\3dendroid\\Seleniun_Stepik\\Finale_project\\screenshots\\'
         name_screenshot = 'screenshot_' + now_date + '.png'
         self.driver.save_screenshot(path + name_screenshot)
         print("SCREENSHOT SAVED")
