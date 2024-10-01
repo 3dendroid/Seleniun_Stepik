@@ -5,10 +5,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Finale_project.base.base_class import Base
 
 
-class Cart_page(Base):
+class Cart_page (Base):
 
     def __init__(self, driver):
-        super().__init__(driver)
+        super ().__init__ (driver)
         self.driver = driver
 
     # LOCATORS
@@ -16,12 +16,12 @@ class Cart_page(Base):
 
     # GETTERS
     def get_checkout_button(self):
-        return WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.XPATH, self.checkout_button)))
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.checkout_button)))
 
     # ACTIONS
     def click_checkout_button(self):
-        self.get_checkout_button().click()
-        print("CLICK CHECKOUT BUTTON")
+        self.get_checkout_button ().click ()
+        print ("CLICK CHECKOUT BUTTON")
 
     def product_confirmation(self):
-        self.click_checkout_button()  # select product (7.7)
+        self.click_checkout_button ()  # select product (7.7)

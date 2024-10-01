@@ -6,7 +6,7 @@ from Finale_project.pages.registration_page import Registration_page
 
 def test_register(set_up, set_group):
     # OPTIONS
-    options = webdriver.ChromeOptions()
+    options = webdriver.ChromeOptions ()
     options.add_argument ("--start-maximized")
     options.add_argument ("--disable-infobars")
     options.add_argument ("--disable-gpu")
@@ -20,18 +20,21 @@ def test_register(set_up, set_group):
     options.add_argument ("--disable-browser-side-navigation")
     options.add_argument ("--no-sandbox")
     options.add_argument ("--disable-web-security")
-    options.add_experimental_option('detach', True)
-    options.add_experimental_option('excludeSwitches', ['enable-logging'])  # clear console (7.3)
+    options.add_experimental_option ('detach', True)
+    options.add_experimental_option ('excludeSwitches', ['enable-logging'])  # clear console (7.3)
+    options.add_argument ("--ignore-certificate-errors")
+    options.add_argument ("--ignore-ssl-errors")
+    options.page_load_strategy = 'eager'
 
     # SERVICE
-    s = Service()
+    s = Service ()
 
     # DRIVER
-    driver = webdriver.Chrome(options=options, service=s)
+    driver = webdriver.Chrome (options=options, service=s)
 
     # REGISTRATION, SELECT PRODUCT, MAKE A PURCHASE
-    reg = Registration_page(driver)
-    reg.registration()
+    reg = Registration_page (driver)
+    reg.registration ()
 
     # DRIVER QUIT
-    driver.quit()
+    driver.quit ()

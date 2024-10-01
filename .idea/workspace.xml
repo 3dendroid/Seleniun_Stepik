@@ -5,19 +5,102 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Chrome_options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Seleniun_Stepik.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Seleniun_Stepik.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.10 negative_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.10 negative_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.11 page_refresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.11 page_refresh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.12 keyboard_immitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.12 keyboard_immitation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.13 screenshots.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.13 screenshots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.14 scroll.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.14 scroll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.15 clear_pagel.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.15 clear_pagel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.16 hidden_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.16 hidden_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.17 smoke_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.17 smoke_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.18 test_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.18 test_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.19 forward_back.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.19 forward_back.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.20 check_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.20 check_box.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.20 check_box_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.20 check_box_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.21 radio_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.21 radio_button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.21 radio_button_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.21 radio_button_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.22 double_click.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.22 double_click.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.23 calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.23 calendar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.24 test_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.24 test_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.25 slider.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.25 slider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.26 drop_down.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.26 drop_down.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.26 drop_down_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.26 drop_down_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.27 forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.27 forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.28 i_frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.28 i_frame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.29 Faker.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.29 Faker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.30 windows_tabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.30 windows_tabs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.31 alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.31 alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.32 upload_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.32 upload_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.33 download_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.33 download_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.34 exception_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.34 exception_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.35 explicit_and_Implicit_expectations.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.35 explicit_and_Implicit_expectations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.36 test_3_with_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.36 test_3_with_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.36 test_3_without_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.36 test_3_without_lists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.4 open_browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.4 open_browser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.5 send_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.5 send_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.6 xpath.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.6 xpath.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.7 autorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.7 autorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.8 test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.8 test_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.9 headless_mode.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.9 headless_mode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/5.1 test_create_class_and_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/5.1 test_create_class_and_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/5.2 test_smoke_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/5.2 test_smoke_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/5.3 test_authorization_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/5.3 test_authorization_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/5.3 test_authorization_module_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/5.3 test_authorization_module_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/5.4 important_info_about_OOP_and_POM.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/5.4 important_info_about_OOP_and_POM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/5.5 test_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/5.5 test_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/login_page_for_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/login_page_for_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5 OOP + Selenium/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 OOP + Selenium/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6 Pytest lessons/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Pytest lessons/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6 Pytest lessons/tests/test_mail_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Pytest lessons/tests/test_mail_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6 Pytest lessons/tests/test_mail_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Pytest lessons/tests/test_mail_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6 Pytest lessons/tests/test_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/6 Pytest lessons/tests/test_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chrome_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chrome_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/base_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/client_informaton_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/client_informaton_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/finish_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/finish_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/payment_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/payment_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/screenshots/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_09_30_17_09_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_link_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_link_about.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_new_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_new_registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/utilities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/utilities/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/base/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/base/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/base/base_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/client_informaton_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/client_informaton_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/finish_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/finish_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/pages/payment_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/pages/payment_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/screenshots/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/screenshots/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/tests/test_buy_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/tests/test_link_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/tests/test_link_about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample_project/utilities/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sample_project/utilities/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +120,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Finale_project/base/base_class.py" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -48,8 +137,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.pytest for test_link_about.test_link_about.executor": "Run",
     "Python tests.pytest for test_new_registration.test_register.executor": "Run",
     "Python tests.pytest in test_buy_product.py.executor": "Run",
+    "Python tests.pytest in test_new_registration.py.executor": "Run",
     "Python.4.10 negative_testing.executor": "Run",
     "Python.4.4 open_browser.executor": "Run",
     "Python.test.executor": "Debug",
@@ -58,7 +149,7 @@
     "git-widget-placeholder": "main",
     "ignore_missing_gitignore": "true",
     "last_opened_file_path": "C:/Users/GIGACHAD/Documents/3dendroid/Seleniun_Stepik",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,50 +158,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest for test_new_registration.test_register">
-    <configuration name="4.10 negative_testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Seleniun_Stepik" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.10 negative_testing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4.4 open_browser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Seleniun_Stepik" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.4 open_browser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Seleniun_Stepik" />
       <option name="ENV_FILES" value="" />
@@ -131,6 +178,23 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_link_about.test_link_about" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Seleniun_Stepik" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Finale_project/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_link_about.test_link_about&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for test_new_registration.test_register" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -167,13 +231,30 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_new_registration.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Seleniun_Stepik" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Finale_project/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Finale_project/tests/test_new_registration.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest for test_new_registration.test_register" />
+        <item itemvalue="Python tests.pytest in test_new_registration.py" />
+        <item itemvalue="Python tests.pytest for test_link_about.test_link_about" />
         <item itemvalue="Python tests.pytest in test_buy_product.py" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.4.4 open_browser" />
-        <item itemvalue="Python.4.10 negative_testing" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +274,30 @@
       <option name="presentableId" value="Default" />
       <updated>1727673911098</updated>
     </task>
+    <task id="LOCAL-00001" summary="next 7.15">
+      <option name="closed" value="true" />
+      <created>1727716324813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727716324813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="next 7.15" />
+    <option name="LAST_COMMIT_MESSAGE" value="next 7.15" />
   </component>
 </project>

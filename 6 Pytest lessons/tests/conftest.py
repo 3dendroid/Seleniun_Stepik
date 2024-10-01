@@ -1,19 +1,18 @@
 import pytest
 
 
-@pytest.fixture()
+@pytest.fixture ()
 def set_up():
-    print(' Log in the system')
+    print (' Log in the system')
     yield
-    print(' Log out the system')
+    print (' Log out the system')
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture (scope="module")
 def module():
-    print('Start test 1')
+    print ('Start test 1')
     yield
-    print('End test 1')
-
+    print ('End test 1')
 
 # @pytest.fixture(scope="function")
 # def function():

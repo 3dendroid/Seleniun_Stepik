@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 # Options
-options = webdriver.ChromeOptions()
+options = webdriver.ChromeOptions ()
 # options.add_argument("--start-maximized")
 options.add_experimental_option ("detach", True)
 options.add_argument ("--disable-infobars")
@@ -28,12 +28,12 @@ options.add_argument ("--disable-setuid-sandbox")
 options.add_argument ("--disable-software-rasterizer")
 
 # Service
-s = Service()
+s = Service ()
 
 # Driver
-driver = webdriver.Chrome(options=options, service=s)
-driver.maximize_window()
-driver.get('https://www.saucedemo.com/')
+driver = webdriver.Chrome (options=options, service=s)
+driver.maximize_window ()
+driver.get ('https://www.saucedemo.com/')
 
 # Quit
-driver.quit()
+driver.quit ()

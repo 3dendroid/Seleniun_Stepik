@@ -11,7 +11,7 @@ from login_page import Login_page
 
 class Test_1:
     def test_select_product(self):
-        print('TEST IS STARTED!')
+        print ('TEST IS STARTED!')
 
         # DATAS
         url = 'https://www.saucedemo.com/'
@@ -19,43 +19,43 @@ class Test_1:
         password_all = 'secret_sauce'
 
         # OPTIONS
-        options = webdriver.ChromeOptions()
-        options.add_experimental_option('detach', True)
+        options = webdriver.ChromeOptions ()
+        options.add_experimental_option ('detach', True)
 
         # SERVICE
-        s = Service()
+        s = Service ()
 
         # DRIVER
-        driver = webdriver.Chrome(options=options, service=s)
-        driver.maximize_window()
-        driver.get(url)
-        time.sleep(2)
+        driver = webdriver.Chrome (options=options, service=s)
+        driver.maximize_window ()
+        driver.get (url)
+        time.sleep (2)
 
         # LOGIN, PASSWORD AND CLICK LOGIN BUTTON
-        login = Login_page(driver)
-        login.authorization(login_standard_user, password_all)
+        login = Login_page (driver)
+        login.authorization (login_standard_user, password_all)
 
         # FIND AND SELECT PRODUCT
-        select_product = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//button[@id='add-to-cart-sauce-labs-backpack']")))
-        select_product.click()
-        print('CLICK SELECT PRODUCT')
+        select_product = WebDriverWait (driver, 10).until (
+            EC.element_to_be_clickable ((By.XPATH, "//button[@id='add-to-cart-sauce-labs-backpack']")))
+        select_product.click ()
+        print ('CLICK SELECT PRODUCT')
 
-        enter_shopping_cart = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[@id='shopping_cart_container']")))
-        enter_shopping_cart.click()
-        print('CLICT ENTER SHOPPING CART')
+        enter_shopping_cart = WebDriverWait (driver, 10).until (
+            EC.element_to_be_clickable ((By.XPATH, "//div[@id='shopping_cart_container']")))
+        enter_shopping_cart.click ()
+        print ('CLICT ENTER SHOPPING CART')
 
-        success_test = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//span[@class='title']")))
+        success_test = WebDriverWait (driver, 10).until (
+            EC.element_to_be_clickable ((By.XPATH, "//span[@class='title']")))
         value_success_test = success_test.text
         assert value_success_test == 'Your Cart'
-        time.sleep(2)
+        time.sleep (2)
 
         # DRIVER QUIT
-        print('TEST IS OVER!')
-        driver.quit()
+        print ('TEST IS OVER!')
+        driver.quit ()
 
 
-test = Test_1()
-test.test_select_product()
+test = Test_1 ()
+test.test_select_product ()

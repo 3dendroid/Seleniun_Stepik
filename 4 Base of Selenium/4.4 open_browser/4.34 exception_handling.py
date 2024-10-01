@@ -7,21 +7,21 @@ from selenium.webdriver.common.by import By
 # OPTIONS
 path = r'C:\Users\GIGACHAD\PycharmProjects\Seleniun_Stepik\4 Base of Selenium\4.4 open_browser\files_download'
 prefs = {'download.default_directory': path}
-options = webdriver.ChromeOptions()
-options.add_experimental_option('detach', True)
-options.add_experimental_option('prefs', prefs)
+options = webdriver.ChromeOptions ()
+options.add_experimental_option ('detach', True)
+options.add_experimental_option ('prefs', prefs)
 options.page_load_strategy = 'eager'
 # options.add_argument('--headless')
 
 # SERVICE
-s = Service()
+s = Service ()
 
 # DRIVER
-driver = webdriver.Chrome(options=options, service=s)
-driver.maximize_window()
+driver = webdriver.Chrome (options=options, service=s)
+driver.maximize_window ()
 # driver.get('https://demoqa.com/dynamic-properties')
-driver.get('https://demoqa.com/radio-button')
-time.sleep(2)
+driver.get ('https://demoqa.com/radio-button')
+time.sleep (2)
 
 # EXCEPTION 1
 # try:
@@ -36,22 +36,22 @@ time.sleep(2)
 
 # EXCEPTION 2
 try:
-    yes_checkbox = driver.find_element(By.XPATH, "//label[@for='yesRadio']")
-    yes_checkbox.click()
-    message = driver.find_element(By.XPATH, "//span[@class='text-success']")
+    yes_checkbox = driver.find_element (By.XPATH, "//label[@for='yesRadio']")
+    yes_checkbox.click ()
+    message = driver.find_element (By.XPATH, "//span[@class='text-success']")
     value_message = message.text
     assert value_message == "No"
 
 except AssertionError as e:
-    driver.refresh()
-    yes_checkbox = driver.find_element(By.XPATH, "//label[@for='yesRadio']")
-    yes_checkbox.click()
-    message = driver.find_element(By.XPATH, "//span[@class='text-success']")
+    driver.refresh ()
+    yes_checkbox = driver.find_element (By.XPATH, "//label[@for='yesRadio']")
+    yes_checkbox.click ()
+    message = driver.find_element (By.XPATH, "//span[@class='text-success']")
     value_message = message.text
-    print(value_message)
+    print (value_message)
     assert value_message == "Yes"
-    driver.close()
-print("Test over")
+    driver.close ()
+print ("Test over")
 
 # QUIT
-driver.quit()
+driver.quit ()

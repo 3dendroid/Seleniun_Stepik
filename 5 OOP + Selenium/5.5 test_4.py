@@ -21,33 +21,33 @@ password = 'secret_sauce'
 
 class Test_4:
     def test_login_users(self):
-        print('TEST IS STARTED!')
+        print ('TEST IS STARTED!')
 
         # OPTIONS
-        options = webdriver.ChromeOptions()
-        options.add_experimental_option('detach', True)
+        options = webdriver.ChromeOptions ()
+        options.add_experimental_option ('detach', True)
 
         # SERVICE
-        s = Service()
+        s = Service ()
 
         # DRIVER
-        driver = webdriver.Chrome(options=options, service=s)
-        driver.maximize_window()
-        driver.get(url)
-        time.sleep(2)
+        driver = webdriver.Chrome (options=options, service=s)
+        driver.maximize_window ()
+        driver.get (url)
+        time.sleep (2)
 
         # LOGIN, PASSWORD AND CLICK LOGIN BUTTON
-        login = Login_page(driver)
+        login = Login_page (driver)
 
         for user in all_users:
-            driver.get(url)
-            login.authorization(user, password)
-            time.sleep(3)
+            driver.get (url)
+            login.authorization (user, password)
+            time.sleep (3)
 
         # DRIVER QUIT
-        print('TEST IS OVER!')
-        driver.quit()
+        print ('TEST IS OVER!')
+        driver.quit ()
 
 
-test = Test_4()
-test.test_login_users()
+test = Test_4 ()
+test.test_login_users ()
