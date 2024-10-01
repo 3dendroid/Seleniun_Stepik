@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="refactor some codes, waiting email from Alexander">
-      <change afterPath="$PROJECT_DIR$/Finale_project/tests/test_login.py" afterDir="false" />
+    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="change the site, next test_buy_product.py refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.4 open_browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.4 open_browser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/base_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/client_informaton_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/finish_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/login_page.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/payment_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/registration_page.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_new_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_new_registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_link_about.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_new_registration.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +65,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.pytest for test_buy_product.test_buy_product.executor": "Run",
     "Python tests.pytest for test_buy_product.test_buy_product_1.executor": "Run",
     "Python tests.pytest for test_link_about.test_link_about.executor": "Run",
     "Python tests.pytest for test_login.test_login.executor": "Run",
@@ -69,6 +75,7 @@
     "Python.4.10 negative_testing.executor": "Run",
     "Python.4.4 open_browser.executor": "Run",
     "Python.login_page.executor": "Run",
+    "Python.main_page.executor": "Run",
     "Python.registration_page.executor": "Run",
     "Python.test.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -85,30 +92,8 @@
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_buy_product.test_buy_product_1">
-    <configuration name="4.4 open_browser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Seleniun_Stepik" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4 Base of Selenium/4.4 open_browser/4.4 open_browser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="registration_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_buy_product.test_buy_product">
+    <configuration name="main_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Seleniun_Stepik" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,13 +106,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Finale_project/pages/registration_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Finale_project/pages/main_page.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_buy_product.test_buy_product" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Seleniun_Stepik" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Finale_project/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_buy_product.test_buy_product&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for test_buy_product.test_buy_product_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -144,23 +146,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_buy_product.test_buy_product_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_login.test_login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Seleniun_Stepik" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Finale_project/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -181,13 +166,30 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_buy_product.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Seleniun_Stepik" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Finale_project/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Finale_project/tests/test_buy_product.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_buy_product.test_buy_product" />
+        <item itemvalue="Python tests.pytest in test_buy_product.py" />
+        <item itemvalue="Python.main_page" />
         <item itemvalue="Python tests.pytest for test_buy_product.test_buy_product_1" />
         <item itemvalue="Python tests.pytest for test_new_registration.test_register" />
-        <item itemvalue="Python.4.4 open_browser" />
-        <item itemvalue="Python.registration_page" />
-        <item itemvalue="Python tests.pytest for test_login.test_login" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727762627735</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change the site, next test_buy_product.py refactor">
+      <option name="closed" value="true" />
+      <created>1727776872064</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727776872064</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +250,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="next 7.15" />
     <MESSAGE value="refactor some codes, waiting email from Alexander" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor some codes, waiting email from Alexander" />
+    <MESSAGE value="change the site, next test_buy_product.py refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the site, next test_buy_product.py refactor" />
   </component>
 </project>

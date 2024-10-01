@@ -35,3 +35,8 @@ class Base:
         get_url = self.driver.current_url
         assert get_url == result
         print ("GOOD VALUE URL")
+
+    def assert_price(self, price):
+        value_price = price.text
+        assert value_price == price
+        print ("GOOD VALUE PRICE")

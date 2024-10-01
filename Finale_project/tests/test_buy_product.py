@@ -5,7 +5,7 @@ from Finale_project.pages.main_page import Main_page
 
 
 # @pytest.mark.order(3)
-def test_buy_product_1(set_up, set_group):
+def test_buy_product(set_up, set_group):
     # for running specific test print in terminal: python -m pytest -svk test.py
     # OPTIONS
     options = webdriver.ChromeOptions ()
@@ -37,8 +37,10 @@ def test_buy_product_1(set_up, set_group):
     # LOGIN, PASSWORD AND CLICK LOGIN BUTTON
     mp = Main_page (driver)
     mp.select_smartphones ()
+    mp.select_price ()
     mp.select_apple ()
-    mp.slide_left ()
+    mp.sort_by_reviews ()
+    mp.view_and_add_to_cart ()
 
     # DRIVER QUIT
     print ('TEST IS OVER!')
