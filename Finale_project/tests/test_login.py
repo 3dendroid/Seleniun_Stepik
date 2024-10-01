@@ -1,10 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-from Finale_project.pages.registration_page import Registration_page
+from Finale_project.pages.login_page import Login_page
 
 
-def test_register(set_up, set_group):
+def test_login(set_up, set_group):
     # OPTIONS
     options = webdriver.ChromeOptions ()
     options.add_argument ("--start-maximized")
@@ -32,9 +32,9 @@ def test_register(set_up, set_group):
     # DRIVER
     driver = webdriver.Chrome (options=options, service=s)
 
-    # REGISTRATION, LOGIN, SELECT PRODUCT, MAKE A PURCHASE
-    reg = Registration_page (driver)
-    reg.registration ()
+    # LOGIN, SELECT PRODUCT, MAKE A PURCHASE
+    log = Login_page (driver)
+    log.authorization ()
 
     # DRIVER QUIT
     driver.quit ()

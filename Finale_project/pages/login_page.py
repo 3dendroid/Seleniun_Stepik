@@ -8,11 +8,14 @@ from Finale_project.base.base_class import Base
 
 
 class Login_page (Base):
-    url = 'https://waxashop.ru/'
-
     def __init__(self, driver):
         super ().__init__ (driver)
         self.driver = driver
+
+    # DATAS
+    url = 'https://waxashop.ru'
+    new_login = 'tester777'
+    new_password = 'password777'
 
     # LOCATORS
     enter = '//span[@data-modal="login"]//span[@class="icon"]'
@@ -23,13 +26,13 @@ class Login_page (Base):
 
     # GETTERS
     def get_user_name(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.ID, self.enter)))
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.enter)))
 
     def get_password(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.ID, self.password)))
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.password)))
 
     def get_login_button(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.ID, self.login_button)))
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.login_button)))
 
     def get_main_word(self):
         return WebDriverWait (self.driver, 10).until (EC.presence_of_element_located ((By.XPATH, self.main_word)))
@@ -54,7 +57,6 @@ class Login_page (Base):
         self.driver.get (self.url)
         self.driver.maximize_window ()
         self.get_current_url ()  # get current url (7.4)
-        self.input_user_name ('standard_user')
-        self.input_password ('secret_sauce')
+        self.input_user_name (self.new_login)
+        self.input_password (self.new_password)
         self.click_login_button ()
-        self.assert_word (self.get_main_word (), 'Products')  # assert word (7.5)

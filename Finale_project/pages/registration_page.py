@@ -8,11 +8,17 @@ from Finale_project.base.base_class import Base
 
 
 class Registration_page (Base):
-    url = 'https://waxashop.ru/signup/'
 
     def __init__(self, driver):
         super ().__init__ (driver)
         self.driver = driver
+
+    # DATAS
+    url = 'https://www.citilink.ru/'
+    new_login = 'tester456'
+    new_password = 'password645'
+    new_email = 'testemail@example.com'
+    new_phone = '1234567892'
 
     # LOCATORS
     first_name = '//input[@id="first_name"]'
@@ -20,6 +26,9 @@ class Registration_page (Base):
     password = '//input[@id="reg_password"]'
     phone = '//input[@id="billing_phone"]'
     register_button = '//button[@id="registration-button"]'
+    error = '//div[@class="error error_responce_number"]//div[@class="span"]'
+    text_error = 'Извините, этот номер телефона уже используется!'
+    text_success = 'Активные заказы'
 
     # GETTERS
     def get_first_name(self):
@@ -36,6 +45,12 @@ class Registration_page (Base):
 
     def get_register_button(self):
         return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.register_button)))
+
+    def get_error(self):
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.error)))
+
+    def get_success(self):
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.text_success)))
 
     # ACTIONS
     def input_first_name(self, first_name):
@@ -62,14 +77,23 @@ class Registration_page (Base):
         self.get_register_button ().click ()
         print ("CLICK REGISTER BUTTON")
 
+    def check_error_message(self):
+        if self.get_error ().text == self.text_error:
+            print ("ERROR MESSAGE:" + self.get_error ().text)
+        else:
+            print ("SUCCESS MESSAGE:" + self.get_success ().text)
+        time.sleep (2)
+
     def registration(self):
         self.driver.get (self.url)
         self.driver.maximize_window ()
         self.get_current_url ()  # get current url (7.4)
-        self.input_first_name ('tester777')
-        self.input_email ('testemail@example777.com')
-        self.input_password ('password777')
-        self.input_phone ('1234567890')
+        self.input_first_name (self.new_login)
+        self.input_email (self.new_email)
+        self.input_password (self.new_password)
+        self.input_phone (self.new_phone)
         self.click_register_button ()
+        self.check_error_message ()
+        self.get_screenshot ()
         time.sleep (3)
         self.get_screenshot ()

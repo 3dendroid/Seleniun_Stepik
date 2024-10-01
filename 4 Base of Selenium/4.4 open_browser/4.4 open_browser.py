@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
@@ -34,6 +36,8 @@ s = Service ()
 driver = webdriver.Chrome (options=options, service=s)
 driver.maximize_window ()
 driver.get ('https://www.saucedemo.com/')
+# driver.get ('https://www.citilink.ru/')
+time.sleep (4)
 
 # Quit
 driver.quit ()

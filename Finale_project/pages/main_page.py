@@ -1,3 +1,6 @@
+import time
+
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -11,77 +14,51 @@ class Main_page (Base):
         super ().__init__ (driver)
         self.driver = driver
 
+    # DATAS
+    url = 'https://www.citilink.ru/'
+
     # LOCATORS
-    product_1 = '//button[@id="add-to-cart-sauce-labs-backpack"]'
-    product_2 = '//div[normalize-space()="Sauce Labs Bike Light"]'
-    product_3 = '//div[normalize-space()="Sauce Labs Bolt T-Shirt"]'
-    cart = '//div[@id="shopping_cart_container"]'
-    menu = '//button[@id="react-burger-menu-btn"]'
-    link_about = '//a[@id="about_sidebar_link"]'
+    product = '//a[@href="/catalog/smartfony/"]'
+    apple = '//input[@id="apple"]'
+    slider = '//div[@class="app-catalog-18f9ifi ee2gm9s0"]//div[@class="rc-slider rc-slider-horizontal"]'
 
     # GETTERS
-    def get_select_product_1(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.product_1)))
+    def get_select_smartphones(self):
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.product)))
 
-    def get_select_product_2(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.product_2)))
+    def get_select_apple(self):
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.apple)))
 
-    def get_select_product_3(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.product_3)))
-
-    def get_cart(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.cart)))
-
-    def get_menu(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.menu)))
-
-    def get_link_about(self):
-        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.link_about)))
+    def get_slider(self):
+        return WebDriverWait (self.driver, 10).until (EC.element_to_be_clickable ((By.XPATH, self.slider)))
 
     # ACTIONS
-    def click_select_product_1(self):
-        self.get_select_product_1 ().click ()
-        print ("CLICK SELECT PRODUCT 1")
+    def click_select_product(self):
+        self.get_select_smartphones ().click ()
+        print ("CLICK SELECT SMARTPHONES")
 
-    def click_select_product_2(self):
-        self.get_select_product_2 ().click ()
-        print ("CLICK SELECT PRODUCT 2")
+    def click_apple(self):
+        self.get_select_apple ().click ()
+        print ("CLICK APPLE")
 
-    def click_select_product_3(self):
-        self.get_select_product_3 ().click ()
-        print ("CLICK SELECT PRODUCT 3")
-
-    def click_cart(self):
-        self.get_cart ().click ()
-        print ("CLICK CART")
-
-    def click_menu(self):
-        self.get_menu ().click ()
-        print ("CLICK MENU")
-
-    def click_link_about(self):
-        self.get_link_about ().click ()
-        print ("CLICK LINK ABOUT")
+    def slide_left(self):
+        actions = ActionChains (self.driver)
+        actions.click_and_hold (self.slider).move_by_offset (-60, 0).release ().perform ()
+        print ("SLIDE LEFT")
 
     # METHODS
-    def select_menu_about(self):
+    def select_smartphones(self):
+        self.driver.get (self.url)
+        self.click_select_product ()
         self.get_current_url ()
-        self.click_menu ()
-        self.click_link_about ()  # second test (7.10)
-        self.assert_url ('https://saucelabs.com/')
+        self.assert_url ('https://www.citilink.ru/catalog/smartfony/')
+        time.sleep (3)
         self.get_screenshot ()
 
-    def select_product_1(self):
-        self.get_current_url ()
-        self.click_select_product_1 ()
-        self.click_cart ()
+    def select_apple(self):
+        self.click_apple ()
+        time.sleep (3)
 
-    def select_product_2(self):
-        self.get_current_url ()
-        self.click_select_product_2 ()
-        self.click_cart ()
-
-    def select_product_3(self):
-        self.get_current_url ()
-        self.click_select_product_3 ()  # select product (7.6)
-        self.click_cart ()
+    def slide(self):
+        self.slide_left ()
+        time.sleep (3)
