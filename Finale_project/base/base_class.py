@@ -1,5 +1,7 @@
 import datetime
 
+from selenium.webdriver.common.by import By
+
 
 class Base:
     """Init driver class"""
@@ -37,6 +39,14 @@ class Base:
         print ("GOOD VALUE URL")
 
     def assert_price(self, price):
-        value_price = price.text
+        self.price = self.driver.find_element (By.XPATH,
+                                               "//span[@class='e1j9birj0 e106ikdt0 css-56qww8 e1gjr6xo0'][normalize-space()='71 690']")
+        value_price = self.price.text
         assert value_price == price
         print ("GOOD VALUE PRICE")
+
+    def assert_name(self, name):
+        self.name = self.driver.find_element (By.XPATH, "//h4[contains(text(),'Apple iPhone 14 128Gb,')]")
+        value_name = self.name.text
+        assert value_name == name
+        print ("GOOD VALUE NAME")
