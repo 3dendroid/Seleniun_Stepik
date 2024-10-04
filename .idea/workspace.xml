@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="made a test_buy_product.py, next add assertion and testing cart page">
-      <change afterPath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/pages/checkout_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/pages/final_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_07_21.png" afterDir="false" />
+    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="next cart_page.py and checkout_page.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/base_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/checkout_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_07_21.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727792666291</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="next cart_page.py and checkout_page.py">
+      <option name="closed" value="true" />
+      <created>1727962859559</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727962859559</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +266,7 @@
     <MESSAGE value="refactor some codes, waiting email from Alexander" />
     <MESSAGE value="change the site, next test_buy_product.py refactor" />
     <MESSAGE value="made a test_buy_product.py, next add assertion and testing cart page" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a test_buy_product.py, next add assertion and testing cart page" />
+    <MESSAGE value="next cart_page.py and checkout_page.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="next cart_page.py and checkout_page.py" />
   </component>
 </project>

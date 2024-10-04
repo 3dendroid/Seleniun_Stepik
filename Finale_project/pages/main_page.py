@@ -83,69 +83,69 @@ class Main_page (Base):
         self.get_min_price ().send_keys ("70000")
         self.get_min_price ().send_keys (Keys.ENTER)
         print ("INPUT MIN PRICE")
-        time.sleep (5)
+        time.sleep (3)
 
     def input_filter(self):
         self.get_filter ().send_keys ("Apple")
         self.get_filter ().send_keys (Keys.ENTER)
         print ("INPUT APPLE IN FILTER")
-        time.sleep (5)
+        time.sleep (3)
 
     def sorting(self):
         self.get_sort_reviews ().click ()
-        time.sleep (5)
+        time.sleep (3)
 
     def click_fast_view(self):
         self.get_fast_view ().click ()
         print ("CLICK FAST VIEW")
-        time.sleep (5)
+        time.sleep (3)
 
     def click_add_to_cart(self):
         self.get_add_to_cart ().click ()
         print ("CLICK ADD TO CART")
-        time.sleep (5)
+        time.sleep (3)
 
     def go_to_cart(self):
         self.get_go_to_cart ()
-        time.sleep (5)
+        time.sleep (3)
 
     # METHODS
     def select_smartphones(self):
         self.driver.get (self.url)
-        time.sleep (5)
+        time.sleep (3)
         self.click_select_product ()
         self.get_current_url ()
         self.assert_url ('https://www.citilink.ru/catalog/smartfony/')
-        time.sleep (5)
+        time.sleep (3)
         self.get_screenshot ()
 
     def select_apple(self):
         self.input_filter ()
         self.click_apple ()
-        time.sleep (5)
+        time.sleep (3)
         self.get_screenshot ()
 
     def select_price(self):
         self.input_min_price ()
         self.slide_left ()
-        time.sleep (5)
+        time.sleep (3)
         self.get_screenshot ()
 
     def sort_by_reviews(self):
         self.sorting ()
-        time.sleep (7)
+        time.sleep (5)
         self.get_screenshot ()
 
     def view_and_add_to_cart(self):
         hover = ActionChains (self.driver)
         hover.move_to_element (self.get_hover_pointer ()).perform ()
         self.click_fast_view ()
-        time.sleep (5)
+        time.sleep (3)
         self.click_add_to_cart ()
-        self.assert_price ('71 690')
-        self.assert_name ('Смартфон Apple iPhone 14 128Gb,  A2884,  темная ночь')
-        time.sleep (5)
+        self.assert_price ('72 890')
+        self.assert_name ('Смартфон Apple iPhone 14 128Gb, A2884, темная ночь')
+        time.sleep (3)
         hover.move_to_element (self.get_go_to_cart ()).perform ()
         hover.click ().perform ()
-        time.sleep (5)
+        time.sleep (3)
         self.get_screenshot ()

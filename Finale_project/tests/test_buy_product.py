@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 from Finale_project.pages.cart_page import Cart_page
+from Finale_project.pages.checkout_page import Checkout_page
 from Finale_project.pages.main_page import Main_page
 
 
@@ -44,6 +45,10 @@ def test_buy_product(set_up, set_group):
     mp.view_and_add_to_cart ()
 
     cp = Cart_page (driver)
+    cp.to_check_out ()
+
+    chp = Checkout_page (driver)
+    chp.confirm_order ()
 
     # DRIVER QUIT
     print ('TEST IS OVER!')

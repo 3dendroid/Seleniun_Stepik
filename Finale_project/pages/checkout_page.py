@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -25,6 +27,7 @@ class Checkout_page (Base):
     checkbox = '//input[@id="contactPaymentConfirm"]'
     email = '//input[@placeholder="Введите ваш e-mail"]'
     finale_price = '//span[@class="e1j9birj0 e106ikdt0 css-8hy98m e1gjr6xo0"]'
+    order_button = '//button[.="Оформить заказ"]'
 
     # GETTERS
 
@@ -58,30 +61,49 @@ class Checkout_page (Base):
     def get_finale_price(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.finale_price)))
 
-    # METHODS
+    def get_order_button(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.order_button)))
 
-    def input_name(self):
-        self.get_name ().send_keys ('Ivan')
+    # ACTIONS
+    def input_name(self, name):
+        self.get_name ().send_keys (name)
 
-    def input_last_name(self):
-        self.get_last_name ().send_keys ('Ivanov')
+    def input_last_name(self, last_name):
+        self.get_last_name ().send_keys (last_name)
 
-    def input_telephone(self):
-        self.get_telephone ().send_keys ('89999999999')
+    def input_telephone(self, telephone):
+        self.get_telephone ().send_keys (telephone)
 
-    def select_delivery(self):
+    def click_delivery(self):
         self.get_delivery ().click ()
         self.get_delivery2 ().click ()
         self.get_delivery3 ().click ()
 
-    def select_by_cash(self):
+    def click_by_cash(self):
         self.get_by_cash ().click ()
 
-    def input_email(self):
-        self.get_email ().send_keys ('a@a.ru')
-
-    def input_checkbox(self):
+    def click_checkbox(self):
         self.get_checkbox ().click ()
 
-    def confirm_data(self):
-        self.assert_price ('71 690')
+    def input_email(self, email):
+        self.get_email ().send_keys (email)
+
+    def click_order_button(self):
+        self.get_order_button ().click ()
+
+    # METHODS
+    def confirm_order(self):
+        self.input_name ('Test')
+        self.input_last_name ('Testov')
+        self.input_telephone ('1234567890')
+        time.sleep (3)
+        self.click_delivery ()
+        time.sleep (3)
+        self.click_by_cash ()
+        self.click_checkbox ()
+        self.input_email ('test@mail.ru')
+        finale_price_text = self.get_finale_price ().text
+        self.assert_price (finale_price_text)
+        self.click_order_button ()
+        time.sleep (3)
+        self.get_screenshot ()

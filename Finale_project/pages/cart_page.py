@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 
 from Finale_project.base.base_class import Base
 
@@ -19,10 +21,10 @@ class Cart_page (Base):
     # GETTERS
 
     def get_confirm_button(self):
-        return self.driver.find_element (By.XPATH, self.confirm_button)
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.confirm_button)))
 
     def get_as_guest(self):
-        return self.driver.find_element (By.XPATH, self.as_guest)
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.as_guest)))
 
     # ACTIONS
     def click_confirm_button(self):
