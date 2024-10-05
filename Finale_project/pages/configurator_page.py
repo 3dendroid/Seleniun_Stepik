@@ -7,7 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Finale_project.base.base_class import Base
 
 
-class Cart_page (Base):
+class Configurator_page (Base):
 
     def __init__(self, driver):
         super ().__init__ (driver)
@@ -17,31 +17,90 @@ class Cart_page (Base):
     url = 'https://www.citilink.ru/configurator/'
 
     # LOCATORS
-    office = ''
-    gaming = ''
-    as_guest = '//span[contains(text(),"Продолжить как гость")]'
+    gaming = '//div[contains(text(),"Игровые")]'
+    for_home = '//div[contains(text(),"Для дома")]'
+    for_office = '//div[contains(text(),"Для офиса")]'
+    for_design = '//div[contains(text(),"Для дизайна")]'
+    sort = '//div[@id="sorting"]'
+    sort_by_popularity = '//span[text()="по популярности"]'
+    first = '(//button[@data-label="Подробнее"])[1]'
+    description = '(//div[@class ="configuration-description"])'
 
     # GETTERS
 
-    def get_confirm_button(self):
-        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.confirm_button)))
+    def get_gaming(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.gaming)))
 
-    def get_as_guest(self):
-        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.as_guest)))
+    def get_for_home(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.for_home)))
+
+    def get_for_office(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.for_office)))
+
+    def get_for_design(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.for_design)))
+
+    def get_sort(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.sort)))
+
+    def get_by_reviews(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.sort_by_popularity)))
+
+    def get_first(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.first)))
+
+    def get_description(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.description)))
 
     # ACTIONS
-    def click_confirm_button(self):
-        self.get_confirm_button ().click ()
+    def click_gaming(self):
+        self.get_gaming ().click ()
         time.sleep (3)
 
-    def click_as_guest(self):
-        self.get_as_guest ().click ()
+    def click_for_home(self):
+        self.get_for_home ().click ()
         time.sleep (3)
+
+    def click_for_office(self):
+        self.get_for_office ().click ()
+        time.sleep (3)
+
+    def click_for_design(self):
+        self.get_for_design ().click ()
+        time.sleep (3)
+
+    def click_sort(self):
+        self.get_sort ().click ()
+        time.sleep (3)
+
+    def click_by_popularity(self):
+        self.get_by_reviews ().click ()
+        time.sleep (3)
+
+    def click_first(self):
+        self.get_first ().click ()
+        time.sleep (3)
+
+    def txt_description(self):
+        return self.get_description ().text
 
     # METHODS
+    def select_configuration(self, text):
+        if text == '1':
+            self.click_gaming ()
+        elif text == '2':
+            self.click_for_home ()
+        elif text == '3':
+            self.click_for_office ()
+        elif text == '4':
+            self.click_for_design ()
 
-    def to_check_out(self):
-        self.assert_url (self.url)
-        self.get_screenshot ()
-        self.click_confirm_button ()
-        self.click_as_guest ()
+    def select_by_popularity(self):
+        self.scroll_down ()
+        self.click_sort ()
+        self.scroll_down ()
+        self.click_by_popularity ()
+        self.scroll_down ()
+        self.click_first ()
+        print (self.txt_description ())
+        self.txt_description ()

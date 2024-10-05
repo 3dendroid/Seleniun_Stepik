@@ -56,3 +56,15 @@ class Base:
         value_name = self.name.text
         assert value_name == name
         print ("GOOD NAME VALUE")
+
+    def error_500(self):
+        error = self.driver.find_element (By.XPATH, '//div[@class="content__status"]')
+        value_error = error.text
+        assert value_error == '500'
+        print ("ERROR 500")
+
+    def scroll_down(self):
+        self.driver.execute_script ("window.scrollTo(0, 200)")
+
+    def refresh(self):
+        self.driver.refresh ()

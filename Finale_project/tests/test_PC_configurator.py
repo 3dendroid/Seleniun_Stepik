@@ -1,13 +1,12 @@
-from os import cpu_count
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
+from Finale_project.pages.configurator_page import Configurator_page
 from Finale_project.pages.main_page import Main_page
 
 
 # @pytest.mark.order(3)
-def test_buy_product(set_up, set_group):
+def test_pc_configurator(set_up, set_group):
     # For running specific test print in terminal: python -m pytest -svk test.py
     # OPTIONS
     options = webdriver.ChromeOptions ()
@@ -36,11 +35,15 @@ def test_buy_product(set_up, set_group):
     # DRIVER
     driver = webdriver.Chrome (options=options, service=s)
 
-    # OPEN, SELECT AND ADD TO CART
+    # OPEN, ASK CONFIGURATION AND SELECT CONFIGURATION
+
     mp = Main_page (driver)
     mp.select_configurator ()
 
-    confp =
+    confp = Configurator_page (driver)
+    # 1 - gaming; 2 - for home; 3 - for office; 4 - for design
+    confp.select_configuration ('1')
+    confp.select_by_popularity ()
 
     # DRIVER QUIT
     print ('TEST IS OVER!')

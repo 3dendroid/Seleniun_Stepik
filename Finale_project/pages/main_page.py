@@ -159,6 +159,7 @@ class Main_page (Base):
         self.get_screenshot ()
 
     def select_configurator(self):
-        self.go_to_configurator ()
-        time.sleep (3)
+        self.driver.get (self.url)
+        hover = ActionChains (self.driver)
+        hover.move_to_element (self.get_configurator ()).click ().perform ()
         self.get_screenshot ()
