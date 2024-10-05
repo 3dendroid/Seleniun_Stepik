@@ -23,8 +23,8 @@ class Checkout_page (Base):
     delivery = '//label[@class="el7jmaq0 e1twwlg30 css-a8cl06 e1amf8g0"]'
     delivery2 = '//span[contains(text(),"Выбрать пункт самовывоза")]'
     delivery3 = '//button[.="Выбрать"]'
-    by_cash = '//label[@class="eddme6n0 e1twwlg30 css-12s80nb e1amf8g0"]'
-    checkbox = '//input[@id="contactPaymentConfirm"]'
+    checkbox = '//span[contains(text(),"Данные получателя указаны верно*")]'
+    by_cash = '//label[contains(.,"Наличными или картой при получении")]'
     email = '//input[@placeholder="Введите ваш e-mail"]'
     finale_price = '//span[@class="e1j9birj0 e106ikdt0 css-8hy98m e1gjr6xo0"]'
     order_button = '//button[.="Оформить заказ"]'
@@ -49,14 +49,14 @@ class Checkout_page (Base):
     def get_delivery3(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.delivery3)))
 
-    def get_by_cash(self):
-        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.by_cash)))
-
     def get_checkbox(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.checkbox)))
 
     def get_email(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.email)))
+
+    def get_by_cash(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.by_cash)))
 
     def get_finale_price(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.finale_price)))
@@ -67,43 +67,55 @@ class Checkout_page (Base):
     # ACTIONS
     def input_name(self, name):
         self.get_name ().send_keys (name)
+        time.sleep (3)
 
     def input_last_name(self, last_name):
         self.get_last_name ().send_keys (last_name)
+        time.sleep (3)
 
     def input_telephone(self, telephone):
         self.get_telephone ().send_keys (telephone)
+        time.sleep (3)
 
     def click_delivery(self):
         self.get_delivery ().click ()
+        time.sleep (3)
         self.get_delivery2 ().click ()
+        time.sleep (3)
         self.get_delivery3 ().click ()
-
-    def click_by_cash(self):
-        self.get_by_cash ().click ()
+        time.sleep (3)
 
     def click_checkbox(self):
         self.get_checkbox ().click ()
+        time.sleep (3)
+
+    def click_by_cash(self):
+        self.get_by_cash ().click ()
+        time.sleep (3)
 
     def input_email(self, email):
         self.get_email ().send_keys (email)
+        time.sleep (3)
 
     def click_order_button(self):
         self.get_order_button ().click ()
+        time.sleep (3)
 
     # METHODS
     def confirm_order(self):
         self.input_name ('Test')
+        print ("INPUT NAME")
         self.input_last_name ('Testov')
+        print ("INPUT LAST NAME")
         self.input_telephone ('1234567890')
-        time.sleep (3)
+        print ("INPUT TELEPHONE")
+        self.get_screenshot ()
         self.click_delivery ()
-        time.sleep (3)
         self.click_by_cash ()
         self.click_checkbox ()
         self.input_email ('test@mail.ru')
-        finale_price_text = self.get_finale_price ().text
-        self.assert_price (finale_price_text)
+        print ("INPUT EMAIL")
+        self.assert_final_price ('72 890')
         self.click_order_button ()
         time.sleep (3)
         self.get_screenshot ()

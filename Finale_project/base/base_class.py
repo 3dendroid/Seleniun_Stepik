@@ -44,6 +44,12 @@ class Base:
         assert value_price == price
         print ("GOOD PRICE VALUE")
 
+    def assert_final_price(self, price):
+        self.price = self.driver.find_element (By.XPATH, "//span[@class='e1j9birj0 e106ikdt0 css-8hy98m e1gjr6xo0']")
+        value_price = self.price.text
+        assert value_price == price
+        print ("GOOD FINAL PRICE VALUE")
+
     def assert_name(self, name):
         self.name = self.driver.find_element (By.XPATH,
                                               "//div[contains(text(),'Смартфон Apple iPhone 14 128Gb,  A2884,  темная ночь')]")

@@ -29,6 +29,7 @@ class Main_page (Base):
     add_to_cart = '//div[@class ="css-zg5qvs e1nf37c40"]'
     cart = '//div[@class="css-etfq0g e1tn9ugy0"]//a[.="Перейти в корзину"]'
     price = '//div[@class="css-etfq0g e1tn9ugy0"]//span[contains(text(),"72 890")]'
+    configurator = '//span[contains(text(),"Конфигуратор ПК")]'
 
     # GETTERS
     def get_select_smartphones(self):
@@ -63,6 +64,9 @@ class Main_page (Base):
 
     def get_price(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.price)))
+
+    def get_configurator(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.configurator)))
 
     # ACTIONS
     def click_select_product(self):
@@ -109,10 +113,14 @@ class Main_page (Base):
         self.get_go_to_cart ()
         time.sleep (3)
 
+    def go_to_configurator(self):
+        self.get_configurator ()
+        time.sleep (3)
+
     # METHODS
     def select_smartphones(self):
         self.driver.get (self.url)
-        time.sleep (3)
+        time.sleep (5)
         self.click_select_product ()
         self.get_current_url ()
         self.assert_url ('https://www.citilink.ru/catalog/smartfony/')
@@ -133,7 +141,7 @@ class Main_page (Base):
 
     def sort_by_reviews(self):
         self.sorting ()
-        time.sleep (5)
+        time.sleep (4)
         self.get_screenshot ()
 
     def view_and_add_to_cart(self):
@@ -147,5 +155,10 @@ class Main_page (Base):
         time.sleep (3)
         hover.move_to_element (self.get_go_to_cart ()).perform ()
         hover.click ().perform ()
+        time.sleep (3)
+        self.get_screenshot ()
+
+    def select_configurator(self):
+        self.go_to_configurator ()
         time.sleep (3)
         self.get_screenshot ()

@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="next cart_page.py and checkout_page.py">
+    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="next checkout_page.py">
+      <change afterPath="$PROJECT_DIR$/Finale_project/pages/configurator_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finale_project/tests/test_PC_configurator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/base_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/cart_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/checkout_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/pages/final_page.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_06_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/screenshots/screenshot_2024_10_03_13_07_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_buy_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,32 +57,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Python tests.pytest for test_buy_product.test_buy_product.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_buy_product.test_buy_product_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_link_about.test_link_about.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_login.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_new_registration.test_register.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in test_buy_product.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in test_new_registration.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.10 negative_testing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.4 open_browser.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.registration_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/GIGACHAD/Documents/3dendroid/Seleniun_Stepik/Finale_project/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.pytest for test_buy_product.test_buy_product.executor": "Run",
+    "Python tests.pytest for test_buy_product.test_buy_product_1.executor": "Run",
+    "Python tests.pytest for test_link_about.test_link_about.executor": "Run",
+    "Python tests.pytest for test_login.test_login.executor": "Run",
+    "Python tests.pytest for test_new_registration.test_register.executor": "Run",
+    "Python tests.pytest in test_buy_product.py.executor": "Run",
+    "Python tests.pytest in test_new_registration.py.executor": "Run",
+    "Python.4.10 negative_testing.executor": "Run",
+    "Python.4.4 open_browser.executor": "Run",
+    "Python.login_page.executor": "Run",
+    "Python.main_page.executor": "Run",
+    "Python.registration_page.executor": "Run",
+    "Python.test.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "C:/Users/GIGACHAD/Documents/3dendroid/Seleniun_Stepik/Finale_project/pages",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\pages" />
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\tests" />
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik" />
     </key>
@@ -247,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727962859559</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="next checkout_page.py">
+      <option name="closed" value="true" />
+      <created>1728037968736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728037968736</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +273,7 @@
     <MESSAGE value="change the site, next test_buy_product.py refactor" />
     <MESSAGE value="made a test_buy_product.py, next add assertion and testing cart page" />
     <MESSAGE value="next cart_page.py and checkout_page.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="next cart_page.py and checkout_page.py" />
+    <MESSAGE value="next checkout_page.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="next checkout_page.py" />
   </component>
 </project>

@@ -14,10 +14,11 @@ class Cart_page (Base):
         self.driver = driver
 
     # DATAS
-    url = 'https://www.citilink.ru/order/'
+    url = 'https://www.citilink.ru/configurator/'
 
     # LOCATORS
-    confirm_button = '//span[contains(text(),"Перейти к оформлению")]'
+    office = ''
+    gaming = ''
     as_guest = '//span[contains(text(),"Продолжить как гость")]'
 
     # GETTERS
