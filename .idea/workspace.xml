@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="test_PC_configurator.py done, next third test">
-      <change afterPath="$PROJECT_DIR$/Finale_project/tests/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finale_project/tests/test_change_city.py" afterDir="false" />
+    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="next test_change_city.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/base_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/configurator_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/configurator_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_PC_configurator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_PC_configurator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_change_city.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_change_city.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
     "Python tests.pytest in test_new_registration.py.executor": "Run",
     "Python.4.10 negative_testing.executor": "Run",
     "Python.4.4 open_browser.executor": "Run",
+    "Python.configurator_page.executor": "Run",
     "Python.login_page.executor": "Run",
     "Python.main_page.executor": "Run",
     "Python.registration_page.executor": "Run",
@@ -87,9 +89,12 @@
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\pages" />
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\texts" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_PC_configurator.test_pc_configurator">
-    <configuration name="main_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.configurator_page">
+    <configuration name="configurator_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Seleniun_Stepik" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +107,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Finale_project/pages/main_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Finale_project/pages/configurator_page.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.configurator_page" />
         <item itemvalue="Python tests.pytest for test_PC_configurator.test_pc_configurator" />
         <item itemvalue="Python tests.pytest for test.test_1" />
         <item itemvalue="Python tests.pytest for test_buy_product.test_buy_product" />
         <item itemvalue="Python tests.pytest in test_buy_product.py" />
-        <item itemvalue="Python.main_page" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728131086392</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="next test_change_city.py">
+      <option name="closed" value="true" />
+      <created>1728364448131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728364448131</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +305,7 @@
     <MESSAGE value="next checkout_page.py" />
     <MESSAGE value="next configurator_page.py" />
     <MESSAGE value="test_PC_configurator.py done, next third test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_PC_configurator.py done, next third test" />
+    <MESSAGE value="next test_change_city.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="next test_change_city.py" />
   </component>
 </project>

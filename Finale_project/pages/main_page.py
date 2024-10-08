@@ -30,7 +30,7 @@ class Main_page (Base):
     cart = '//div[@class="css-etfq0g e1tn9ugy0"]//a[.="Перейти в корзину"]'
     price = '//div[@class="css-etfq0g e1tn9ugy0"]//span[contains(text(),"72 890")]'
     configurator = '//span[contains(text(),"Конфигуратор ПК")]'
-    city_list = '//span[contains(@color,"None")][1]'
+    city_list = '//button[contains(@class,"ewtpdih0 css-o6fbp8 etyxved0")]'
     input_city = '//input[@placeholder="Введите название города"]'
     search_result = '//div[@class="PopupScrollContainer"]//li[1]'
 
@@ -184,16 +184,18 @@ class Main_page (Base):
 
     def select_configurator(self):
         self.driver.get (self.url)
+        self.refresh_if_500 ()
         hover = ActionChains (self.driver)
         hover.move_to_element (self.get_configurator ()).click ().perform ()
         self.get_screenshot ()
 
     def select_city(self, city):
         self.driver.get (self.url)
+        self.scroll_to_bottom ()
         self.click_city_list ()
-        time.sleep (3)
+        time.sleep (5)
         self.input_new_city (city)
-        time.sleep (3)
+        time.sleep (5)
         self.click_search_result ()
-        time.sleep (3)
+        time.sleep (5)
         self.get_screenshot ()

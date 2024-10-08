@@ -42,7 +42,7 @@ def test_pc_configurator(set_up, set_group):
 
     confp = Configurator_page (driver)
     # 1 - gaming; 2 - for home; 3 - for office; 4 - for design
-    confp.select_configuration ('1')
+    confp.select_configuration ('4')
     confp.select_by_popularity ()
 
     # DRIVER QUIT

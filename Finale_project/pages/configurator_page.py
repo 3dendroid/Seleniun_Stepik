@@ -1,3 +1,4 @@
+import re
 import time
 
 from selenium.webdriver.common.by import By
@@ -24,7 +25,9 @@ class Configurator_page (Base):
     sort = '//div[@id="sorting"]'
     sort_by_popularity = '//span[text()="по популярности"]'
     first = '(//button[@data-label="Подробнее"])[1]'
-    description = '(//div[@class ="configuration-description"])'
+    all_specs = '//ul[@class="js--configuration-card__component-list configuration-card__component-list"]'
+    unfold = '//li[contains(@class,"pseudo")]'
+    conf_price = '//span[@class="configuration-card_current-price js--configuration-card_current-price js--configuration-price__sum"]'
 
     # GETTERS
     def get_gaming(self):
@@ -48,21 +51,27 @@ class Configurator_page (Base):
     def get_first(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.first)))
 
-    def get_description(self):
-        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.description)))
+    def get_unfold(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.unfold)))
+
+    def get_conf_price(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.conf_price))).text
+
+    def get_all_specs(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.all_specs))).text
 
     # ACTIONS
     def click_gaming(self):
         self.get_gaming ().click ()
-        time.sleep (3)
+        time.sleep (5)
 
     def click_for_home(self):
         self.get_for_home ().click ()
-        time.sleep (3)
+        time.sleep (5)
 
     def click_for_office(self):
         self.get_for_office ().click ()
-        time.sleep (3)
+        time.sleep (5)
 
     def click_for_design(self):
         self.get_for_design ().click ()
@@ -70,43 +79,59 @@ class Configurator_page (Base):
 
     def click_sort(self):
         self.get_sort ().click ()
-        time.sleep (3)
+        time.sleep (5)
 
     def click_by_popularity(self):
         self.get_by_reviews ().click ()
-        time.sleep (3)
+        time.sleep (5)
 
     def click_first(self):
         self.get_first ().click ()
-        time.sleep (3)
+        time.sleep (5)
 
-    def txt_description(self):
-        return self.get_description ().text
+    def click_unfold(self):
+        self.get_unfold ().click ()
+        time.sleep (5)
 
     # METHODS
     def select_configuration(self, text):
         if text == '1':
+            self.refresh_if_500 ()
             self.click_gaming ()
         elif text == '2':
+            self.refresh_if_500 ()
             self.click_for_home ()
         elif text == '3':
+            self.refresh_if_500 ()
             self.click_for_office ()
         elif text == '4':
+            self.refresh_if_500 ()
             self.click_for_design ()
 
     def select_by_popularity(self):
-        try:
-            if self.get_title () == '500':
-                self.refresh ()
-                self.select_by_popularity ()
-            else:
-                self.scroll_down ()
-                self.click_sort ()
-                self.scroll_down ()
-                self.click_by_popularity ()
-                self.scroll_down ()
-                self.click_first ()
-                print (self.txt_description ())
-                self.txt_description ()
-        except Exception as e:
-            print (f"An error occurred: {e}")
+        self.refresh_if_500 ()
+        self.scroll_down ()
+        self.click_sort ()
+
+        self.refresh_if_500 ()
+        self.scroll_down ()
+
+        self.refresh_if_500 ()
+        self.click_by_popularity ()
+
+        self.refresh_if_500 ()
+        self.scroll_down ()
+
+        self.refresh_if_500 ()
+        self.click_first ()
+        self.scroll_down ()
+        self.click_unfold ()
+        self.get_screenshot ()
+
+        text = self.get_all_specs ()
+        cleaned_text = re.sub (r'Свернуть список компонентов', '', text)
+        print ("CONFIGURATION: ", cleaned_text)
+        print ("PRICE: ", self.get_conf_price () + " руб.")
+        with open (r'C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\texts\configuration.txt', 'w',
+                   encoding='utf-8') as file:
+            file.write (cleaned_text)

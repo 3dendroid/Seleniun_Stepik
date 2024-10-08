@@ -63,10 +63,15 @@ class Base:
         assert value_name == name
         print ("GOOD NAME VALUE")
 
-    """Method scroll down"""
+    """Method scroll down on 240 pixels"""
 
     def scroll_down(self):
-        self.driver.execute_script ("window.scrollTo(0, 200)")
+        self.driver.execute_script ("window.scrollTo({top: 230, behavior: 'smooth'});")
+
+    """Method scroll down to bottom"""
+
+    def scroll_to_bottom(self):
+        self.driver.execute_script ("window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});")
 
     """Method refresh"""
 
@@ -77,3 +82,16 @@ class Base:
 
     def get_title(self):
         return self.driver.title
+
+    """Method to refresh page if error 500"""
+
+    def refresh_if_500(self, max_attempts=5):
+        attempts = 0
+        while attempts < max_attempts:
+            if self.get_title () == '500':
+                self.refresh ()
+                attempts += 1
+            else:
+                break
+        if attempts == max_attempts:
+            print ("Exceeded maximum attempts to refresh due to error 500.")

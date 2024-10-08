@@ -37,7 +37,7 @@ def test_change_city(set_up, set_group):
     # OPEN, ASK CONFIGURATION AND SELECT CONFIGURATION
 
     mp = Main_page (driver)
-    mp.select_city ('Ростов')
+    mp.select_city ('Москва')
 
     # DRIVER QUIT
     print ('TEST IS OVER!')
