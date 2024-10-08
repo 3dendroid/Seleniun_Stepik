@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="next configurator_page.py">
+    <list default="true" id="51488abd-a162-4bb4-abe3-aad6cf599282" name="Changes" comment="test_PC_configurator.py done, next third test">
+      <change afterPath="$PROJECT_DIR$/Finale_project/tests/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Finale_project/tests/test_change_city.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/base/base_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/base/base_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/configurator_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/configurator_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Finale_project/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Finale_project/tests/test_PC_configurator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Finale_project/tests/test_PC_configurator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.pytest for test.test_1.executor": "Run",
     "Python tests.pytest for test_PC_configurator.test_pc_configurator.executor": "Run",
     "Python tests.pytest for test_buy_product.test_buy_product.executor": "Run",
     "Python tests.pytest for test_buy_product.test_buy_product_1.executor": "Run",
@@ -75,14 +77,14 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "C:/Users/GIGACHAD/Documents/3dendroid/Seleniun_Stepik/Finale_project/pages",
+    "last_opened_file_path": "C:/Users/GIGACHAD/Documents/3dendroid/Seleniun_Stepik/Finale_project/tests",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\pages" />
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\tests" />
+      <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik\Finale_project\pages" />
       <recent name="C:\Users\GIGACHAD\Documents\3dendroid\Seleniun_Stepik" />
     </key>
   </component>
@@ -143,7 +145,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_buy_product.test_buy_product_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Seleniun_Stepik" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,7 +158,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_buy_product.test_buy_product_1&quot;" />
+      <option name="_new_target" value="&quot;test.test_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -180,10 +182,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest for test_PC_configurator.test_pc_configurator" />
+        <item itemvalue="Python tests.pytest for test.test_1" />
         <item itemvalue="Python tests.pytest for test_buy_product.test_buy_product" />
         <item itemvalue="Python tests.pytest in test_buy_product.py" />
         <item itemvalue="Python.main_page" />
-        <item itemvalue="Python tests.pytest for test_buy_product.test_buy_product_1" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728115751415</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test_PC_configurator.py done, next third test">
+      <option name="closed" value="true" />
+      <created>1728131086392</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728131086392</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +291,7 @@
     <MESSAGE value="next cart_page.py and checkout_page.py" />
     <MESSAGE value="next checkout_page.py" />
     <MESSAGE value="next configurator_page.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="next configurator_page.py" />
+    <MESSAGE value="test_PC_configurator.py done, next third test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_PC_configurator.py done, next third test" />
   </component>
 </project>

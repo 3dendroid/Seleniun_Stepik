@@ -30,6 +30,9 @@ class Main_page (Base):
     cart = '//div[@class="css-etfq0g e1tn9ugy0"]//a[.="Перейти в корзину"]'
     price = '//div[@class="css-etfq0g e1tn9ugy0"]//span[contains(text(),"72 890")]'
     configurator = '//span[contains(text(),"Конфигуратор ПК")]'
+    city_list = '//span[contains(@color,"None")][1]'
+    input_city = '//input[@placeholder="Введите название города"]'
+    search_result = '//div[@class="PopupScrollContainer"]//li[1]'
 
     # GETTERS
     def get_select_smartphones(self):
@@ -67,6 +70,15 @@ class Main_page (Base):
 
     def get_configurator(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.configurator)))
+
+    def get_city_list(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.city_list)))
+
+    def get_input_city(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.input_city)))
+
+    def get_search_result(self):
+        return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.search_result)))
 
     # ACTIONS
     def click_select_product(self):
@@ -117,6 +129,18 @@ class Main_page (Base):
         self.get_configurator ()
         time.sleep (3)
 
+    def input_new_city(self, city):
+        self.get_input_city ().send_keys (city)
+        time.sleep (3)
+
+    def click_search_result(self):
+        self.get_search_result ().click ()
+        time.sleep (3)
+
+    def click_city_list(self):
+        self.get_city_list ().click ()
+        time.sleep (3)
+
     # METHODS
     def select_smartphones(self):
         self.driver.get (self.url)
@@ -150,8 +174,8 @@ class Main_page (Base):
         self.click_fast_view ()
         time.sleep (3)
         self.click_add_to_cart ()
-        self.assert_price ('72 890')
-        self.assert_name ('Смартфон Apple iPhone 14 128Gb, A2884, темная ночь')
+        self.assert_price ('72 990')  # price
+        self.assert_name ('Смартфон Apple iPhone 14 128Gb, A2884, темная ночь')  # name of product
         time.sleep (3)
         hover.move_to_element (self.get_go_to_cart ()).perform ()
         hover.click ().perform ()
@@ -162,4 +186,14 @@ class Main_page (Base):
         self.driver.get (self.url)
         hover = ActionChains (self.driver)
         hover.move_to_element (self.get_configurator ()).click ().perform ()
+        self.get_screenshot ()
+
+    def select_city(self, city):
+        self.driver.get (self.url)
+        self.click_city_list ()
+        time.sleep (3)
+        self.input_new_city (city)
+        time.sleep (3)
+        self.click_search_result ()
+        time.sleep (3)
         self.get_screenshot ()

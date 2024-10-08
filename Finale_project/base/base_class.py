@@ -38,17 +38,23 @@ class Base:
         assert get_url == result
         print ("GOOD VALUE URL")
 
+    """Method assert price"""
+
     def assert_price(self, price):
         self.price = self.driver.find_element (By.XPATH, "//span[contains(text(),'72 890')]")
         value_price = self.price.text
         assert value_price == price
         print ("GOOD PRICE VALUE")
 
+    """Method assert final price"""
+
     def assert_final_price(self, price):
         self.price = self.driver.find_element (By.XPATH, "//span[@class='e1j9birj0 e106ikdt0 css-8hy98m e1gjr6xo0']")
         value_price = self.price.text
         assert value_price == price
         print ("GOOD FINAL PRICE VALUE")
+
+    """Method assert name"""
 
     def assert_name(self, name):
         self.name = self.driver.find_element (By.XPATH,
@@ -57,14 +63,17 @@ class Base:
         assert value_name == name
         print ("GOOD NAME VALUE")
 
-    def error_500(self):
-        error = self.driver.find_element (By.XPATH, '//div[@class="content__status"]')
-        value_error = error.text
-        assert value_error == '500'
-        print ("ERROR 500")
+    """Method scroll down"""
 
     def scroll_down(self):
         self.driver.execute_script ("window.scrollTo(0, 200)")
 
+    """Method refresh"""
+
     def refresh(self):
         self.driver.refresh ()
+
+    """Method to get title of the page"""
+
+    def get_title(self):
+        return self.driver.title

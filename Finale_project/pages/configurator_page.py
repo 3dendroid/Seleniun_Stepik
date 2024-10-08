@@ -27,7 +27,6 @@ class Configurator_page (Base):
     description = '(//div[@class ="configuration-description"])'
 
     # GETTERS
-
     def get_gaming(self):
         return WebDriverWait (self.driver, 20).until (EC.element_to_be_clickable ((By.XPATH, self.gaming)))
 
@@ -96,11 +95,18 @@ class Configurator_page (Base):
             self.click_for_design ()
 
     def select_by_popularity(self):
-        self.scroll_down ()
-        self.click_sort ()
-        self.scroll_down ()
-        self.click_by_popularity ()
-        self.scroll_down ()
-        self.click_first ()
-        print (self.txt_description ())
-        self.txt_description ()
+        try:
+            if self.get_title () == '500':
+                self.refresh ()
+                self.select_by_popularity ()
+            else:
+                self.scroll_down ()
+                self.click_sort ()
+                self.scroll_down ()
+                self.click_by_popularity ()
+                self.scroll_down ()
+                self.click_first ()
+                print (self.txt_description ())
+                self.txt_description ()
+        except Exception as e:
+            print (f"An error occurred: {e}")
